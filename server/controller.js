@@ -37,6 +37,10 @@ module.exports = {
         let randomFortune = fortunesList[randomIndex].fortune;
       
         res.status(200).send(randomFortune)
-    }
-
+    },
+    postNewFortune: (req, res) => {
+        fortunesList.push(req.body)
+        res.status(200).send(fortunesList)
+    },
+    
 }
