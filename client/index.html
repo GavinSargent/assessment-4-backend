@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+
+    <h2 id="fortune">Fortunes!</h2>
+      <label for="fortune-button">What will your fortune be?</label>
+      <button id="fortune-button">Click Here for Fortune</button>
+    <h2>Have a fortune idea?</h2>
+    
+    <section>
+    <h3>Add it here with your name!</h3>
+      <form>
+        <label for="add-fortune">Fortune:</label>
+        <input type="text" id="add-fortune" placeholder="Fortune">
+        <label for="add-name">Name:</label>
+        <input type="text" id="name" placeholder="Name">
+        <button id="submit-fortune"> Submit Fortune</button>
+      </form>
+    </section>
+
+    <section>
+    <h4>Accidentally added a bad fortune or want to change one you submitted?</h4>
+    <h5>Delete your fortune</h5>
+    <form id="delete-fortune">
+      <input id="delete-fortune-name" type="text" placeholder="Your name">
+      <button id="submit-delete-form">Submit</button>
+    </form>
+    
+    <h5>Edit your fortune</h5>
+    <form id="edit-fortune">
+      <input type="text" id="edit-fortune-content" placeholder="New fortune">
+      <input type="text" id="edit-fortune-name" placeholder="Your name">
+      <button id="submit-edit-form">Submit</button>
+    </form>
+    </section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
