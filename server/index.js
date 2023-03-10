@@ -6,12 +6,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const { getCompliment } = require('./controller')
+const { getCompliment, getRandomFortune } = require('./controller')
 
 
 
 app.get("/api/compliment", getCompliment);
-
+app.get('/api/fortune/random', getRandomFortune)
 
 
 

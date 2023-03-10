@@ -1,5 +1,6 @@
 const complimentBtn = document.getElementById("complimentButton")
-
+const randomFortuneBtn = document.getElementById("fortune-button")
+const addfortune = document.getElementById('add-fortune')
 
 
 
@@ -17,7 +18,7 @@ const getCompliment = () => {
 };
 
 const getFortune = () => {
-    axios.get("http://localhost:4000/api/compliment/")
+    axios.get("http://localhost:4000/api/fortune/random/")
         .then(res => {
             const data = res.data;
             alert(data);
@@ -28,3 +29,4 @@ const getFortune = () => {
 
 
 complimentBtn.addEventListener('click', getCompliment)
+randomFortuneBtn.addEventListener('click', getFortune)
